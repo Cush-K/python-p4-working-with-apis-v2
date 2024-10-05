@@ -23,7 +23,7 @@ class Search:
         search_term = "the lord of the rings"
 
         search_term_formatted = search_term.replace(" ", "+")
-        fields = ["title", "author_name"]
+        fields = ["title", "author_name","contributor"]
         fields_formatted = ",".join(fields)
         limit = 1
 
@@ -55,3 +55,5 @@ search_term = input("Enter a book title: ")
 result = Search().get_user_search_results(search_term)
 print("Search Result:\n")
 print(result)
+
+    
